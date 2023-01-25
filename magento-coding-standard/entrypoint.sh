@@ -17,7 +17,7 @@ test -z "${PHPCS_STANDARD}" && PHPCS_STANDARD=Magento2
 test -z "${PHPCS_SEVERITY}" && PHPCS_SEVERITY=8
 test -z "${PHPCS_REPORT}" && PHPCS_REPORT=checkstyle
 test -z "${PHPCS_EXTENSIONS}" && PHPCS_EXTENSIONS=php
-test -z "${PATH_TO_CODE}" && PATH_TO_CODE=
+test -z "${PATH_TO_CODE}" && PATH_TO_CODE=/composer/absolunet/B2B
 
 echo "PHPCS report: ${PHPCS_REPORT}"
 echo "PHPCS standard: ${PHPCS_STANDARD}"
