@@ -11,6 +11,9 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://extdn/magento-coding-standard-action:latest'
+  env:
+    PHPCS_STANDARD: ${{ inputs.phpcs_standard }}
+    PATH_TO_CODE: ${{ inputs.path_to_code }}
 branding:
   icon: 'code'  
   color: 'green'
