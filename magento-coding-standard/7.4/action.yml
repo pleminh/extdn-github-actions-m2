@@ -11,6 +11,9 @@ inputs:
   phpcs_severity:
     description: 'Which severity to check for. Default: "8"'
     required: false
+  path_to_code:
+    description: 'Path to run the PHPCS inspection. Default: ""'
+    required: false
 runs:
   using: 'docker'
   image: 'docker://extdn/magento-coding-standard-action:7.4-latest'
