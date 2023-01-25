@@ -17,6 +17,8 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://extdn/magento-coding-standard-action:7.3-latest'
+  args:
+    - ${{ inputs.path_to_code }}
 branding:
   icon: 'code'  
   color: 'green'
