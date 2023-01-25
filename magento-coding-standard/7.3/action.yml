@@ -17,11 +17,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://extdn/magento-coding-standard-action:7.3-latest'
-  env:
-    PHPCS_STANDARD: ${{ inputs.phpcs_standard }}
-    PHPCS_REPORT: ${{ inputs.phpcs_report }}
-    PHPCS_SEVERITY: ${{ inputs.phpcs_severity }}
-    PATH_TO_CODE: ${{ inputs.path_to_code }}
 branding:
   icon: 'code'  
   color: 'green'
