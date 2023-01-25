@@ -25,6 +25,7 @@ echo "PHPCS severity: ${PHPCS_SEVERITY}"
 echo "PHPCS extensions: ${PHPCS_EXTENSIONS}"
 echo "Path to code: ${PATH_TO_CODE}"
 
+echo "DEBUGTEST"
 sh -c "/root/.composer/vendor/bin/phpcs \
   --report=${PHPCS_REPORT} \
   --extensions=${PHPCS_EXTENSIONS} \
