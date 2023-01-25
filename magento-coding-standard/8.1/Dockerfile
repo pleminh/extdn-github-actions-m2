@@ -8,5 +8,5 @@ RUN ~/.composer/vendor/bin/phpcs --config-set installed_paths ../../magento/mage
 RUN echo memory_limit = -1 >> /usr/local/etc/php/conf.d/custom-memory.ini
 
 ADD problem-matcher.json /problem-matcher.json
-ADD entrypoint.sh /entrypoint.sh
+ADD ../entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
